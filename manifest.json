@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Personal Content Wall",
+    "version": "1.0",
+    "description": "Block unwanted content categories from web pages.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "<all_urls>" 
+    ],
+    "options_ui": {
+      "page": "options.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
+  
